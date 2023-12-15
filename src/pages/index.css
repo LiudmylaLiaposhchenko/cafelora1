@@ -1,4 +1,4 @@
-header {
+/* header {
   padding: 1rem 0 1rem 0;
   height: 5rem;
 
@@ -97,17 +97,17 @@ nav a:hover {
 
   .nav-btn:focus {
     outline: none;
-  }
+  } */
 
-  .banner__content {
-    width: 30%;
+.banner__content {
+  width: 30%;
 
-    margin-left: 65%;
-    padding-top: 4rem;
+  margin-left: 65%;
+  padding-top: 4rem;
 
-    text-align: center;
-  }  
+  text-align: center;
 }
+
 
 
 footer {
@@ -167,72 +167,73 @@ footer {
 }
 
 .drinks-list {
-  display: grid;@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Raleway&display=swap");
+  display: grid;
+  @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Raleway&display=swap");
 
   * {
     box-sizing: border-box;
   }
-  
+
   html {
     font-size: 15px;
     font-family: "Raleway", sans-serif;
   }
-  
+
   body {
     margin: 0;
-  
+
     background-color: #e67646;
     background-image: url("./img/spots.png");
-  
+
     color: white;
   }
-  
+
   section {
     padding-top: 2rem;
   }
-  
+
   .container {
     padding-left: 1rem;
     padding-right: 1rem;
     margin-left: auto;
     margin-right: auto;
   }
-  
+
   @media (min-width: 768px) {
     .container {
       max-width: 960px;
     }
   }
-  
+
   h1,
   h2 {
     margin-bottom: 1rem;
-  
+
     font-family: "Great Vibes", fantasy;
     font-weight: 400;
     font-size: 3rem;
   }
-  
+
   h2 {
     text-align: center;
   }
-  
+
   h3 {
     text-transform: uppercase;
   }
-  
+
   a {
     color: white;
   }
-  
+
   .page {
     display: grid;
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
   }
-  
-  
-  grid-template-columns: repeat( auto-fit, minmax(20rem, 1fr) );
+
+
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   justify-content: center;
   justify-items: center;
   grid-gap: 1rem;
