@@ -6,7 +6,7 @@ export const Drink = ({ name, imageUrl }) => {
     <div className="drink">
       <div className="drink__product">
         <div className="drink__cup">
-          <img src={imageUrl} />
+          <img src={`http://localhost:4000${imageUrl}`} />
         </div>
         <div className="drink__info">
           <h3>{name}</h3>
