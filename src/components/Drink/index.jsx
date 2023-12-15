@@ -1,3 +1,4 @@
+import { Layer } from '../Layer';
 import './index.css';
 
 export const Drink = ({ name, imageUrl }) => {
@@ -9,13 +10,7 @@ export const Drink = ({ name, imageUrl }) => {
         </div>
         <div className="drink__info">
           <h3>{name}</h3>
-          <div className="layer">
-            <div
-              className="layer__color"
-              style={{ backgroundColor: '#613916' }}
-            ></div>
-            <div className="layer__label">espresso</div>
-          </div>
+          <Layer color="#feeeca" label="mléčná pěna" />
         </div>
       </div>
       <form className="drink__controls">
