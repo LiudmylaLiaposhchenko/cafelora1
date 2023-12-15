@@ -29,3 +29,20 @@ document.querySelector('.nav-btn').addEventListener('click', (e) => {
   e.preventDefault();
   document.querySelector('.rollout-nav').classList.toggle('nav-closed');
 });
+
+const forms = document.querySelectorAll('form');
+forms.forEach((f) =>
+  f.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const inputElm = e.target.querySelector('input');
+    const id = inputElm.value;
+
+    await fetch(`http://localhost:4000/api/drinks/${id}`, {
+      method: 'PATCH',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify([{ op: 'replace', path: '/ordered', value: true }]),
+    });
+  }),
+);
